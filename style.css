@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Creepster');
 :root {
   --background: #0f2f3c;
   --skin: #8ec83e;
@@ -20,7 +21,28 @@ body{
     justify-content: center;
     height: 100vh;
     width: 100%;
-
+    font-family: Creepster, sans-serif;
+}
+.zombie{
+  position: absolute;
+  background: var(--white);
+  top: -110px;
+  left: -120px;
+  padding: 20px 30px;
+  border-radius: 20px;
+  font-size: 45px;
+  font-family: 'Creepster', cursive;
+  color: var(--brain);
+  letter-spacing: 5px;
+  z-index: 5;
+  animation: texto 2s infinite;
+  transition: opacity 300ms ease-in-out;
+  box-shadow: 0px 0px 5px 0px var(--black);
+}
+@keyframes texto {
+  0%{transform: scale(1);}
+  50%{transform: scale(1.1);}
+  0%{transform: scale(1);}
 }
 .head{
     width: 300px;
@@ -237,7 +259,58 @@ body{
     border-radius: 50%;
     opacity: .8;
   }
- 
+ .detail-1{
+  position: absolute;
+  top: 15px;
+  left: 70px;
+  width: 30px;
+  height: 30px;
+  background: var(--tooth);
+  border-radius: 50%;
+  opacity: .5;
+ }
+ .detail-2{
+  width: 20px;
+  height: 20px;
+  background: var(--tooth);
+  opacity: .5;
+  position: absolute;
+  bottom: 80px;
+  right: 20px;
+  border-radius: 50%;
+ }
+ .detail-3{
+  width: 25px;
+  height: 25px;
+  background: var(--tooth);
+  opacity: .5;
+  position: absolute;
+  top: 150px;
+  left: 40px;
+  border-radius: 50%;
+ }
+ .detail-4 {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+  background: var(--tooth);
+  opacity: 0.5;
+  z-index: 3;
+}
+.detail-5 {
+  position: absolute;
+  top: 30px;
+  right: 60px;
+  height: 13px;
+  width: 13px;
+  border-radius: 50%;
+  background: var(--tooth);
+  opacity: 0.5;
+  z-index: 3;
+}
   @keyframes brain {
     0%{transform: scale(1);}
     50%{transform: scale(1.02);}
